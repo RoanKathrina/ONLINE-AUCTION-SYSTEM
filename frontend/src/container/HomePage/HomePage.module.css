@@ -1,0 +1,128 @@
+.HomePage {
+	background-color: #CF8F2E;
+    width: 100vw;
+    min-height: 100vh;    
+}
+
+.container {
+    display: flex;
+	background-color: #8B4513;
+}
+
+.headerImage {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.headerText {
+    margin-top: 15px; 
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.headerMenu {
+    display: flex; 
+    width: 500px; 
+    justify-content: space-between;
+    position: absolute; /*or fixed*/
+    right: 10px;
+    transform: translate(0, -50%);
+    padding-top: 20px;
+}
+
+.headerMenuSelection {
+    margin-top: 40px; 
+    /* font-size: 80; */
+    background-color: transparent;
+    color: white;
+    border: None;
+    font-size: 24px;
+	cursor: pointer;
+}
+
+.AuctionItem {
+    display: inline-block;
+    padding: 20px 205px;
+	text-align: center;
+	margin: 16px;
+	/* border: 1px solid black; */
+	background-color: #8B4513;
+	color: white;
+}
+
+.AuctionItem button {
+	display: in-line;
+	font: inherit;
+	padding: 5px;
+	margin: 0 5px;
+	width: 80px;
+	border: 1px solid #AA6817;
+	cursor: pointer;
+	outline: none;
+	font: black;
+	font-weight: bold;
+}
+
+.OngoingCompletedPageDiv {
+	display: inline-block;
+	/* padding: 20px; */
+	/* text-align: left; */
+	margin: 5px 16px;
+	border: 1px solid black;
+	background-color: #703B09;
+	color: white;
+	justify-content: space-between;
+    width: 80vw;
+    min-height: 80vh;
+}
+
+.OngoingCompletedPageDivProducts {
+	float: left;
+}
+
+.OngoingCompletedSelector {
+    display: inline-block;
+	background-color: #8B4513;
+    margin: 20px 20px; 
+    color: white;
+    border: None;
+    font-size: 24px;
+    width: 1000px; 
+    justify-content: space-between;
+}
+
+.OngoingCompletedSelectorButton {
+    /* margin-top: 40px;  */
+    /* font-size: 80; */
+    padding: 20px 20px;
+    margin: 10px 10px;
+    background-color:  #CF8F2E;
+    color: white;
+    border: None;
+    font-size: 24px;
+	cursor: pointer;
+}
+
+.BidButton {
+    background-color:#CF8F2E;
+    color: white;
+    font-size: 100px;
+	cursor: pointer;
+    width: 200px !important;
+    height: 50px !important;
+    font-size: 24px !important;
+}
+
+/* .AuctionItem button {
+	display: in-line;
+	font: inherit;
+	padding: 5px;
+	margin: 0 5px;
+	width: 80px;
+	border: 1px solid #AA6817;
+	cursor: pointer;
+	outline: none;
+	font: black;
+	font-weight: bold;
+} */

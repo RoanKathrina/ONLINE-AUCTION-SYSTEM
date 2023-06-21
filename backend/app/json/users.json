@@ -1,0 +1,43 @@
+{
+    "users_information": [
+        {
+            "email": "roan.dimaculangan@gmail.com",
+            "password": "cGFzczEyMzQ=",
+            "credit": "8000",
+            "completed_bid": [
+                {
+                    "id": "18062023104519",
+                    "bid_price": "1000"
+                },
+                {
+                    "id": "18062023104521",
+                    "bid_price": "2000"
+                }
+            ],
+            "ongoing_bid": []
+        },
+        {
+            "email": "rach.dimaculangan@gmail.com",
+            "password": "cGFzczEyMzQ=",
+            "credit": "19500",
+            "completed_bid": [
+                {
+                    "id": "18062023104522",
+                    "bid_price": "2500"
+                },
+                {
+                    "id": "18062023104523",
+                    "bid_price": "3000"
+                }
+            ],
+            "ongoing_bid": []
+        },
+        {
+            "email": "lucia.dimaculangan@gmail.com",
+            "password": "cGFzczEyMzQ=",
+            "credit": "0",
+            "ongoing_bid": [],
+            "completed_bid": []
+        }
+    ]
+}

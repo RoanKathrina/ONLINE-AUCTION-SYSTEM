@@ -1,0 +1,79 @@
+{
+    "completed": [
+        {
+            "id": "18062023104520",
+            "item_name": "bag",
+            "start_price": "1300",
+            "current_price": "1300",
+            "time_window": "00:10:00",
+            "start_date": "18-06-2023",
+            "end_date": "18-06-2023",
+            "start_time": "10:45:20",
+            "end_time": "10:55:20",
+            "bidders": []
+        },
+        {
+            "id": "18062023104521",
+            "item_name": "shoes",
+            "start_price": "1500",
+            "current_price": "1500",
+            "time_window": "00:10:00",
+            "start_date": "18-06-2023",
+            "end_date": "18-06-2023",
+            "start_time": "10:45:20",
+            "end_time": "10:55:20",
+            "bidders": [
+                {
+                    "email": "roan.dimaculangan@gmail.com",
+                    "bid_price": "2000"
+                }
+            ]
+        },
+        {
+            "id": "18062023104522",
+            "item_name": "clothes",
+            "start_price": "1800",
+            "current_price": "1800",
+            "time_window": "00:20:30",
+            "start_date": "18-06-2023",
+            "end_date": "18-06-2023",
+            "start_time": "11:30:20",
+            "end_time": "11:50:50",
+            "bidders": [
+                {
+                    "email": "rach.dimaculangan@gmail.com",
+                    "bid_price": "2500"
+                }
+            ]
+        },
+        {
+            "id": "18062023104523",
+            "item_name": "shoes",
+            "start_price": "1500",
+            "current_price": "3000",
+            "time_window": "12:00:00",
+            "start_date": "2023-06-19",
+            "end_date": "2023-06-19",
+            "start_time": "10:00:00",
+            "end_time": "22:00:00",
+            "bidders": [
+                {
+                    "email": "rach.dimaculangan@gmail.com",
+                    "bid_price": "3000"
+                }
+            ]
+        },
+        {
+            "id": "18062023104524",
+            "item_name": "clothes",
+            "start_price": "1800",
+            "current_price": "1800",
+            "time_window": "12:00:00",
+            "start_date": "2023-06-19",
+            "end_date": "2023-06-19",
+            "start_time": "10:00:00",
+            "end_time": "22:00:00",
+            "bidders": []
+        }
+    ]
+}
