@@ -74,6 +74,57 @@
             "start_time": "10:00:00",
             "end_time": "22:00:00",
             "bidders": []
+        },
+        {
+            "id": "18062023104525",
+            "item_name": "shoes",
+            "start_price": "1500",
+            "current_price": "11100",
+            "time_window": "24:00:00",
+            "start_date": "2023-06-21",
+            "end_date": "2023-06-22",
+            "start_time": "06:00:00",
+            "end_time": "12:41:00",
+            "bidders": [
+                {
+                    "email": "rach.dimaculangan@gmail.com",
+                    "bid_price": "11100"
+                }
+            ]
+        },
+        {
+            "id": "20230623084001",
+            "item_name": "tissue",
+            "start_price": "100",
+            "current_price": "200",
+            "time_window": "48:00:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-06-23",
+            "start_time": "08:40:01",
+            "end_time": "08:40:01",
+            "bidders": [
+                {
+                    "email": "roan.dimaculangan@gmail.com",
+                    "bid_price": "200"
+                }
+            ]
+        },
+        {
+            "id": "18062023104526",
+            "item_name": "clothes",
+            "start_price": "1800",
+            "current_price": "5000",
+            "time_window": "24:00:00",
+            "start_date": "2023-06-21",
+            "end_date": "2023-06-23",
+            "start_time": "06:00:00",
+            "end_time": "16:48:00",
+            "bidders": [
+                {
+                    "email": "romeo.dimaculangan@gmail.com",
+                    "bid_price": "5000"
+                }
+            ]
         }
     ]
 }

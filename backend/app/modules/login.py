@@ -1,5 +1,5 @@
-from fastapi import APIRouter
 from common.utilities import *
+from fastapi import APIRouter
 
 router = APIRouter(
     prefix="/api/login"
@@ -17,5 +17,5 @@ def get_users():
         result["result"] = users_information_list
     except UtilitiesException as e:
         result["exit_code"] = "400"
-        result["exit_message"] = e
+        result["exit_message"] = e.msg
     return result

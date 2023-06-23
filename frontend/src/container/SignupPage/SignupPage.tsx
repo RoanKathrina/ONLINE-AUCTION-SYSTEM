@@ -48,7 +48,7 @@ class SignupPage extends React.Component<any, any>{
         var email_pass = this.state.email + ":" + this.state.password;
         const user = btoa(email_pass);
 
-		axios.put('http://localhost:8086/api/register', user).then(response => {
+		axios.put('http://localhost:8086/api/register/user?user=' + user).then(response => {
             console.log('[DEBUGGING] /api/register');
             console.log(response);
             if(response.data.exit_code != '200'){
@@ -57,7 +57,7 @@ class SignupPage extends React.Component<any, any>{
             }
             else {
                 window.alert('Successfully signed up.');
-                this.props.history.push('/');        
+                this.props.history.push('/login');        
             }
         })
 	}
@@ -89,17 +89,16 @@ class SignupPage extends React.Component<any, any>{
 		return(
 			<div className={classes.SignupPage}>
 				<div className={classes.SignupPageDiv}>
-				<img src='https://previews.123rf.com/images/dirkercken/dirkercken1409/dirkercken140900457/31601253-online-auction-bidding-buy-or-sell-on-the-internet.jpg' style={{height: '250px'}}/>
+				<img src='https://previews.123rf.com/images/dirkercken/dirkercken1409/dirkercken140900457/31601253-online-auction-bidding-buy-or-sell-on-the-internet.jpg' style={{height: '300px'}}/>
 				<h1>ONLINE AUCTION SYSTEM</h1>
-				<p><strong>Email: </strong></p>
-				<input id='email' value={this.state.email} onChange={this.emailInputHandler}></input>
-				<p><strong>Password: </strong></p>
-				<input id='password' type='password' value={this.state.password} onChange={this.passwordInputHandler}></input>
-				<br/><br/><button onClick={this.signupUser}>Sign Up</button>
+				<p className={classes.SignupPageLabel}><strong>Email: </strong></p>
+				<input id='email' className={classes.SignupPageInputBox} value={this.state.email} onChange={this.emailInputHandler}></input>
+				<p className={classes.SignupPageLabel}><strong>Password: </strong></p>
+				<input id='password' className={classes.SignupPageInputBox} type='password' value={this.state.password} onChange={this.passwordInputHandler}></input>
+				<br/><br/><button className={classes.SignupPageButton} onClick={this.signupUser}>Sign Up</button>
 				</div>
 			</div>
 		);
 	}
 }
-
 export default SignupPage;

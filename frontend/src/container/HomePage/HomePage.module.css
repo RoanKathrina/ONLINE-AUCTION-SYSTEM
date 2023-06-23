@@ -4,26 +4,34 @@
     min-height: 100vh;    
 }
 
-.container {
+.HomePageLoading {
+	background-color: #CF8F2E;
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    font-size: 100px;
+}
+
+.Container {
     display: flex;
 	background-color: #8B4513;
 }
 
-.headerImage {
+.HeaderImage {
     height: 50px;
     margin-top: 5px;
 }
 
-.headerText {
+.HeaderText {
     margin-top: 15px; 
     font-weight: bold;
     color: white;
     font-size: 24px;
 }
 
-.headerMenu {
+.HeaderMenu {
     display: flex; 
-    width: 500px; 
+    width: 800px; 
     justify-content: space-between;
     position: absolute; /*or fixed*/
     right: 10px;
@@ -31,9 +39,8 @@
     padding-top: 20px;
 }
 
-.headerMenuSelection {
+.HeaderMenuSelection {
     margin-top: 40px; 
-    /* font-size: 80; */
     background-color: transparent;
     color: white;
     border: None;
@@ -41,12 +48,19 @@
 	cursor: pointer;
 }
 
+.HeaderMenuUser {
+    margin-top: 40px; 
+    background-color: transparent;
+    color: yellow;
+    border: None;
+    font-size: 20px;
+}
+
 .AuctionItem {
     display: inline-block;
     padding: 20px 205px;
 	text-align: center;
 	margin: 16px;
-	/* border: 1px solid black; */
 	background-color: #8B4513;
 	color: white;
 }
@@ -66,8 +80,6 @@
 
 .OngoingCompletedPageDiv {
 	display: inline-block;
-	/* padding: 20px; */
-	/* text-align: left; */
 	margin: 5px 16px;
 	border: 1px solid black;
 	background-color: #703B09;
@@ -93,8 +105,6 @@
 }
 
 .OngoingCompletedSelectorButton {
-    /* margin-top: 40px;  */
-    /* font-size: 80; */
     padding: 20px 20px;
     margin: 10px 10px;
     background-color:  #CF8F2E;
@@ -114,15 +124,32 @@
     font-size: 24px !important;
 }
 
-/* .AuctionItem button {
-	display: in-line;
-	font: inherit;
-	padding: 5px;
-	margin: 0 5px;
-	width: 80px;
-	border: 1px solid #AA6817;
-	cursor: pointer;
-	outline: none;
-	font: black;
-	font-weight: bold;
-} */
+.BidItem {
+    display: inline-block;
+    padding: 20px 205px;
+	text-align: center;
+	margin: 16px;
+	background-color: #8B4513;
+	color: white;
+}
+
+.BidButtonDiv {
+    display: inline-block;
+    width: 500px; 
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.BidInputBox {
+    width: 500px !important;
+    height: 50px !important;
+    display: center !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ModalTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+}

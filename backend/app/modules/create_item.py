@@ -1,17 +1,22 @@
+from common.utilities import *
 from datetime import date, datetime, timedelta
 from fastapi import APIRouter
-from common.utilities import *
-
 import base64
+import logging
 
 router = APIRouter(
     prefix='/api/create-item'
 )
 
-@router.get('/')
-def create_new_item(item_name='shoes', start_price='1500', time_window='00:10:00'):
-    #return {'result': users_information_list, 'exit_code': '200|400', 'exit_message': ''}
-    # //http://127.0.0.1:8086/api/create-item/?item_name='clothes'&start_price=1800&time_window=23:10:30
+@router.put('/item')
+def create_new_item(item_name: str, start_price: str, time_window: str):
+    # return {'result': users_information_list, 'exit_code': '200|400', 'exit_message': ''}
+    logging.basicConfig(level=logging.INFO)
+
+    logging.info("[DEBUGGING] item_name: " + item_name)
+    logging.info("[DEBUGGING] start_price: " + start_price)
+    logging.info("[DEBUGGING] time_window: " + time_window)
+
     new_item_dict = {
         'id': '',
         'item_name': '',
@@ -25,6 +30,7 @@ def create_new_item(item_name='shoes', start_price='1500', time_window='00:10:00
         'bidders': []
     }
     result = {'exit_code': '200', 'exit_message': 'Success'}
+    logging.info("[DEBUGGING] create_new_item")
 
     #Get start date and start time
     start_date = date.today().strftime('%Y-%m-%d')
@@ -53,6 +59,8 @@ def create_new_item(item_name='shoes', start_price='1500', time_window='00:10:00
     new_item_dict['start_time'] = start_time
     new_item_dict['end_time'] = end_time
 
+    logging.info("[DEBUGGING] new_item_dict: " + str(new_item_dict))
+
     try:
         utilities = Utilities()
         ongoing_bid_dict = utilities.get_ongoing_bid()
@@ -62,5 +70,5 @@ def create_new_item(item_name='shoes', start_price='1500', time_window='00:10:00
 
     except UtilitiesException as e:
         result["exit_code"] = "400"
-        result["exit_message"] = e
+        result["exit_message"] = e.msg
     return result

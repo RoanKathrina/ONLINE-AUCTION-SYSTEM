@@ -1,7 +1,7 @@
-from fastapi import APIRouter
 from common.utilities import *
-
+from fastapi import APIRouter
 import base64
+import logging
 
 router = APIRouter(
     prefix='/api/deposit'
@@ -19,13 +19,16 @@ def get_users():
         result["result"] = users_information_list
     except UtilitiesException as e:
         result["exit_code"] = "400"
-        result["exit_message"] = e
+        result["exit_message"] = e.msg
     return result
 
-@router.get('/update')
-def update_user_credit(user='cm9hbi5kaW1hY3VsYW5nYW5AZ21haWwuY29t', deposit='1300'):
+@router.put('/update')
+def update_user_credit(user: str, deposit: str):
     #return {"result": users_information_list, "exit_code": "200|400", "exit_message": ""}
-    #//http://127.0.0.1:8086/api/deposit/update/?user="cm9hbi5kaW1hY3VsYW5nYW5AZ21haWwuY29t"&deposit=1300
+
+    logging.basicConfig(level=logging.INFO)
+    logging.info("[DEBUGGING] user: " + user)
+    logging.info("[DEBUGGING] deposit: " + deposit)
 
     utilities = Utilities()
     result = {'exit_code': '200', 'exit_message': 'Success'}
@@ -44,5 +47,5 @@ def update_user_credit(user='cm9hbi5kaW1hY3VsYW5nYW5AZ21haWwuY29t', deposit='130
         utilities.create_users_information_json(users_information_dict)
     except UtilitiesException as e:
         result['exit_code'] = '400'
-        result['exit_message'] = e
+        result['exit_message'] = e.msg
     return result

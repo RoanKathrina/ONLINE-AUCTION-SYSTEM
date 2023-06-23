@@ -1,7 +1,5 @@
-# from typing import Union
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
 from modules import login
 from modules import register
 from modules import deposit

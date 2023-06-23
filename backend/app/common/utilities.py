@@ -1,8 +1,8 @@
+from datetime import date, datetime, timedelta
 import configparser
 import json
 import logging
 import simplejson
-from datetime import date, datetime, timedelta
 
 class Utilities:
     def __init__(self):
@@ -101,7 +101,9 @@ class Utilities:
             logging.info("DEBUGGING: ongoing_bid_list: %s" % ongoing_bid_list)
 
             for item in ongoing_bid_list:
-                if current_date <= item['end_date']:
+                if current_date < item['end_date']:
+                    new_ongoing_bid_list.append(item)
+                elif current_date == item['end_date']:
                     if current_time >= item['end_time']:
                         # add the item under stage_bid_dict
                         stage_bid_list.append(item)
@@ -109,7 +111,6 @@ class Utilities:
                     elif current_time < item['end_time']:
                         # add the item under new_ongoing_bid_list
                         new_ongoing_bid_list.append(item)
-
                 elif current_date > item['end_date']:
                     # add the item under stage_bid_list
                     stage_bid_list.append(item)
@@ -167,9 +168,9 @@ class Utilities:
             # create_users_information_json()
             self.create_users_information_json(users_information_dict)        
             ##END
-
         except Exception as e:
             raise UtilitiesException("Error encountered during updating of Ongoing and Completed Bid JSON files.")
+
 class UtilitiesException(Exception):
     def __init__(self, msg):
         self.msg = msg

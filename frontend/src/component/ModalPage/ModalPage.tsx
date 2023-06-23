@@ -1,28 +1,29 @@
-import './ModalPage.module.css';
-import React, { Component } from 'react';
+import classes from './ModalPage.module.css';
+import React from 'react';
 
 class ModalPage extends React.Component<any, any>{
 
-    showHideClassName = this.props.show ? "modal display-block" : "modal display-none";
-
-    constructor(props:any) {
-        super(props);        
-    }
-
-    handleClose = () => {
-
+    constructor(props: any) {
+        super(props);
     }
 
     render() {
         return(
-        <div className={this.showHideClassName}>
-            <section className="modal-main">
-                {this.props.children}
-                <button type="button" onClick={this.handleClose}>
-                    Close
-                </button>
-            </section>
-        </div>
+            <div className={classes.TempClass}>
+                {this.props.show ? 
+                    <div className={classes.ModalShow}>
+                        <section className={classes.ModalMain}>
+                            {this.props.children}
+                        </section>
+                    </div>
+                :
+                <div className={classes.ModalHide}>
+                    <section className={classes.ModalMain}>
+                        {this.props.children}
+                    </section>
+                </div>
+            }
+            </div>
         )
     }
 }

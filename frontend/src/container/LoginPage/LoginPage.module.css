@@ -1,11 +1,11 @@
-.SignupPage {
+.LoginPage {
 	background-color: #CF8F2E;
 	width: 100%;
     width: 100vw;
     min-height: 100vh;
 }
 
-.SignupPageDiv {
+.LoginPageDiv{
 	display: inline-block;
 	padding: 100px;
 	text-align: center;
@@ -13,22 +13,10 @@
 	border: 1px solid black;
 	background-color: #8B4513;
 	color: white;
+	width: auto;
 }
 
-/* .SignupPage button {
-	display: in-line;
-	font: inherit;
-	padding: 5px;
-	margin: 0 5px;
-	width: 80px;
-	border: 1px solid #AA6817;
-	cursor: pointer;
-	outline: none;
-	font: black;
-	font-weight: bold;
-} */
-
-.SignupPageInputBox {
+.LoginPageInputBox {
     width: 500px !important;
     height: 50px !important;
     display: center !important;
@@ -36,12 +24,12 @@
     font-weight: bold;
 }
 
-.SignupPageLabel {
+.LoginPageLabel {
     font-size: 24px;
     font-weight: bold;
 }
 
-.SignupPageButton {
+.LoginPageButton {
     background-color:#CF8F2E;
     color: white;
     font-size: 100px;

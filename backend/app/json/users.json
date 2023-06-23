@@ -3,7 +3,7 @@
         {
             "email": "roan.dimaculangan@gmail.com",
             "password": "cGFzczEyMzQ=",
-            "credit": "8000",
+            "credit": "27800",
             "completed_bid": [
                 {
                     "id": "18062023104519",
@@ -12,14 +12,23 @@
                 {
                     "id": "18062023104521",
                     "bid_price": "2000"
+                },
+                {
+                    "id": "20230623084001",
+                    "bid_price": "200"
                 }
             ],
-            "ongoing_bid": []
+            "ongoing_bid": [
+                {
+                    "id": "18062023104527",
+                    "bid_price": "3100"
+                }
+            ]
         },
         {
             "email": "rach.dimaculangan@gmail.com",
             "password": "cGFzczEyMzQ=",
-            "credit": "19500",
+            "credit": "8400",
             "completed_bid": [
                 {
                     "id": "18062023104522",
@@ -28,6 +37,10 @@
                 {
                     "id": "18062023104523",
                     "bid_price": "3000"
+                },
+                {
+                    "id": "18062023104525",
+                    "bid_price": "11100"
                 }
             ],
             "ongoing_bid": []
@@ -38,6 +51,18 @@
             "credit": "0",
             "ongoing_bid": [],
             "completed_bid": []
+        },
+        {
+            "email": "romeo.dimaculangan@gmail.com",
+            "password": "cGFzczEyMzQ=",
+            "credit": "0",
+            "ongoing_bid": [],
+            "completed_bid": [
+                {
+                    "id": "18062023104526",
+                    "bid_price": "5000"
+                }
+            ]
         }
     ]
 }

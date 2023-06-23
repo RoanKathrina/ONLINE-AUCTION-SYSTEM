@@ -1,101 +1,112 @@
 {
     "ongoing": [
         {
-            "id": "18062023104525",
-            "item_name": "shoes",
-            "start_price": "1500",
-            "current_price": "3000",
-            "time_window": "16:00:00",
-            "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
-            "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": [
-                {
-                    "email": "rach.dimaculangan@gmail.com",
-                    "bid_price": "3000"
-                }
-            ]
-        },
-        {
-            "id": "18062023104526",
-            "item_name": "clothes",
-            "start_price": "1800",
-            "current_price": "1800",
-            "time_window": "16:00:00",
-            "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
-            "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": []
-        },
-        {
             "id": "18062023104527",
             "item_name": "shoes",
             "start_price": "1500",
             "current_price": "3000",
-            "time_window": "16:00:00",
+            "time_window": "24:00:00",
             "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
+            "end_date": "2023-08-24",
             "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": [
-                {
-                    "email": "rach.dimaculangan@gmail.com",
-                    "bid_price": "3000"
-                }
-            ]
+            "end_time": "06:00:00",
+            "bidders": []
         },
         {
             "id": "18062023104528",
             "item_name": "shoes",
             "start_price": "1500",
             "current_price": "3000",
-            "time_window": "16:00:00",
+            "time_window": "24:00:00",
             "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
+            "end_date": "2023-08-24",
             "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": [
-                {
-                    "email": "rach.dimaculangan@gmail.com",
-                    "bid_price": "3000"
-                }
-            ]
+            "end_time": "06:00:00",
+            "bidders": []
         },
         {
             "id": "18062023104529",
             "item_name": "shoes",
             "start_price": "1500",
             "current_price": "3000",
-            "time_window": "16:00:00",
+            "time_window": "24:00:00",
             "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
+            "end_date": "2023-08-24",
             "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": [
-                {
-                    "email": "rach.dimaculangan@gmail.com",
-                    "bid_price": "3000"
-                }
-            ]
+            "end_time": "06:00:00",
+            "bidders": []
         },
         {
             "id": "18062023104530",
             "item_name": "shoes",
             "start_price": "1500",
             "current_price": "3000",
-            "time_window": "16:00:00",
+            "time_window": "24:00:00",
             "start_date": "2023-06-21",
-            "end_date": "2023-06-21",
+            "end_date": "2023-08-24",
             "start_time": "06:00:00",
-            "end_time": "22:00:00",
-            "bidders": [
-                {
-                    "email": "rach.dimaculangan@gmail.com",
-                    "bid_price": "3000"
-                }
-            ]
+            "end_time": "06:00:00",
+            "bidders": []
+        },
+        {
+            "id": "20230623073503",
+            "item_name": "tables",
+            "start_price": "1000",
+            "current_price": "1000",
+            "time_window": "10:00:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-08-23",
+            "start_time": "07:35:03",
+            "end_time": "17:35:03",
+            "bidders": []
+        },
+        {
+            "id": "20230623082006",
+            "item_name": "phone",
+            "start_price": "10000",
+            "current_price": "10000",
+            "time_window": "24:00:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-08-24",
+            "start_time": "08:20:06",
+            "end_time": "08:20:06",
+            "bidders": []
+        },
+        {
+            "id": "20230623082152",
+            "item_name": "plant",
+            "start_price": "10000",
+            "current_price": "10000",
+            "time_window": "24:00:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-08-24",
+            "start_time": "08:21:52",
+            "end_time": "08:21:52",
+            "bidders": []
+        },
+        {
+            "id": "20230623084304",
+            "item_name": "battery",
+            "start_price": "2000",
+            "current_price": "2000",
+            "time_window": "24:59:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-08-24",
+            "start_time": "08:43:04",
+            "end_time": "09:42:04",
+            "bidders": []
+        },
+        {
+            "id": "20230623165046",
+            "item_name": "candles",
+            "start_price": "200",
+            "current_price": "200",
+            "time_window": "48:00:00",
+            "start_date": "2023-06-23",
+            "end_date": "2023-06-25",
+            "start_time": "16:50:46",
+            "end_time": "16:50:46",
+            "bidders": []
         }
     ]
 }
